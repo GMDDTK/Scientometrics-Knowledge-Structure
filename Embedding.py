@@ -15,7 +15,10 @@ with open(txt_file_path, 'r', encoding='utf-8') as f:
         dataset.append(line.strip())
 
 # Step 1 - Extract embedding 词嵌入(all-MiniLM-L6-v2或all-roberta-large-v1)
-embedding_model = SentenceTransformer(r'E:\NLP_data\all-roberta-large-v1', device='cuda')
+embedding_model = SentenceTransformer(
+    "sentence-transformers/all-roberta-large-v1",
+    device=device
+)
 
 # 基于模型对文本进行语义向量构建
 embeddings = embedding_model.encode(dataset, show_progress_bar=True)
