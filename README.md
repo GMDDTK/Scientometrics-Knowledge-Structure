@@ -32,7 +32,3 @@ pip install numpy pandas matplotlib scikit-learn umap-learn hdbscan sentence-tra
 Run the scripts from the repository root. First run `Embedding.py` to generate `embeddings.npy`, then run the clustering scripts. `Hierarchical Aggregation.py` uses the retained spectral-clustering output.
 
 The generated embedding matrix is not stored in the repository because of its size. It can be regenerated from `all.txt` using `Embedding.py`.
-
-## Contact
-
-Questions about the data or additional materials may be directed to the corresponding author at `djun_zheng@163.com`.
