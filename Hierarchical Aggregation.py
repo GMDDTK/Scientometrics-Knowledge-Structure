@@ -21,16 +21,11 @@ from scipy.spatial.distance import pdist, squareform
 # 0. 配置区
 # ============================================================
 
-EXCEL_PATH = (
-    r"E:\AAA＿论文\AAA博士\0各章重点实验与分析"
-    r"\主题结构\聚类结果\0-Spectral Clustering.xlsx"
-)
+EXCEL_PATH = "0_Spectral Clustering.xlsx"
+MODEL_PATH = "sentence-transformers/all-roberta-large-v1"
+USE_CUDA = torch.cuda.is_available()
 
 SHEET_INDEX = 2
-
-MODEL_PATH = r"E:\NLP_data\all-roberta-large-v1"
-
-USE_CUDA = True
 
 BATCH_SIZE = 32
 
